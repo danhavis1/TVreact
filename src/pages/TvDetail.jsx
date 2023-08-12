@@ -4,7 +4,7 @@ import axios from "axios";
 import { Container, Image, Row, Col } from "react-bootstrap";
 import { PiTelevisionBold } from "react-icons/pi";
 import { FaBookOpen } from "react-icons/fa";
-import Loader  from '../utils/Loaders'
+import Loaders  from '../utils/Loaders'
 
 export default function TvDetail() {
   const { id } = useParams();
@@ -41,7 +41,7 @@ export default function TvDetail() {
     <div >
       {error && <p className="mt-5 text-center">{error.message}</p>}
       { loading ? (
-      <Loader/> 
+      <Loaders/> 
       ) : (
       <Container fluid className="p-0">
         <div
